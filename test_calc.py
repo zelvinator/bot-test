@@ -2,7 +2,7 @@
 """Tests for the calculator module."""
 
 import pytest
-from calc import add, subtract, multiply, divide
+from calc import add, subtract, multiply, divide, power
 
 
 class TestAdd:
@@ -48,6 +48,17 @@ class TestDivide:
 
     def test_divide_fraction(self):
         assert divide(7, 2) == 3.5
+
+
+class TestPower:
+    def test_power_positive(self):
+        assert power(2, 3) == 8
+
+    def test_power_zero_exponent(self):
+        assert power(5, 0) == 1
+
+    def test_power_one_exponent(self):
+        assert power(7, 1) == 7
 
 
 
