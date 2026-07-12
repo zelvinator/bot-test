@@ -28,3 +28,6 @@ if __name__ == "__main__":
         print(f"Unknown operation: {op}")
         sys.exit(1)
     print(ops[op](a, b))
+
+def modulo(a: int, b: int) -> int:
+    return a % b
