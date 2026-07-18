@@ -31,3 +31,6 @@ if __name__ == "__main__":
 
 def modulo(a: int, b: int) -> int:
     return a % b
+
+def power(a: int, b: int) -> int:
+    return a ** b
