@@ -29,5 +29,8 @@ if __name__ == "__main__":
         sys.exit(1)
     print(ops[op](a, b))
 
+def modulo(a: int, b: int) -> int:
+    return a % b
+
 def power(a: int, b: int) -> int:
     return a ** b
