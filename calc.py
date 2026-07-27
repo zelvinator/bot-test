@@ -15,6 +15,9 @@ def divide(a: int, b: int) -> int:
         raise ValueError("Cannot divide by zero")
     return a / b
 
+def power(a: int, b: int) -> int:
+    return a ** b
+
 
 if __name__ == "__main__":
     import sys
@@ -28,6 +31,3 @@ if __name__ == "__main__":
         print(f"Unknown operation: {op}")
         sys.exit(1)
     print(ops[op](a, b))
-
-def power(a: int, b: int) -> int:
-    return a ** b
